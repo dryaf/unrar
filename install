@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export DOCKER_CONTENT_TRUST=1
+docker pull alpine:latest
+docker build --no-cache --rm -t unrar .
+cp unrar /usr/local/bin

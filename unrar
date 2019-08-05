@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --memory="1g" --cpus="1" --rm -v $PWD:/files unrar "$@" 
